@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Javascript编码规范 · 酷陆科技前端Team规范</title>
+        <title>前端项目目录结构及文件命名规范 · 酷陆科技前端Team规范</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Vue编码规范.html" />
+    <link rel="next" href="前端API适配层规范.html" />
     
     
-    <link rel="prev" href="CSS编码规范.html" />
+    <link rel="prev" href="CHANGELOG.html" />
     
 
     </head>
@@ -119,7 +119,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="项目目录结构规范.html">
+        <li class="chapter active" data-level="1.3" data-path="项目目录结构规范.html">
             
                 <a href="项目目录结构规范.html">
             
@@ -171,7 +171,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="Javascript编码规范.html">
+        <li class="chapter " data-level="1.7" data-path="Javascript编码规范.html">
             
                 <a href="Javascript编码规范.html">
             
@@ -227,7 +227,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Javascript编码规范</a>
+        <a href="." >前端项目目录结构及文件命名规范</a>
     </h1>
 </div>
 
@@ -242,8 +242,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="javascript&#x7F16;&#x7801;&#x89C4;&#x8303;">Javascript&#x7F16;&#x7801;&#x89C4;&#x8303;</h1>
-<p>TODO</p>
+                                <h1 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h1>
+<p>&#x672C;&#x6587;&#x7B80;&#x5355;&#x63CF;&#x8FF0;&#x4E86;&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x4E2D;&#x76EE;&#x5F55;&#x53CA;&#x6587;&#x4EF6;&#x7684;&#x7ED3;&#x6784;&#x548C;&#x547D;&#x540D;&#x89C4;&#x8303;&#x3002;</p>
+<h1 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h1>
+<p>&#x73B0;&#x5728;&#x524D;&#x7AEF;&#x90FD;&#x662F;&#x5DE5;&#x7A0B;&#x5316;&#x7684;&#x5929;&#x4E0B;&#xFF0C;&#x4E00;&#x822C;&#x800C;&#x8A00;&#xFF0C;&#x4F1A;&#x5C06;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x5206;&#x4E3A;<strong>&#x6E90;&#x4EE3;&#x7801;</strong>&#x548C;<strong>&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;</strong>&#x4E24;&#x90E8;&#x5206;&#x3002;&#x6E90;&#x4EE3;&#x7801;&#x5E94;&#x653E;&#x5728;<code>/src</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x800C;<strong>&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;</strong>&#x5219;&#x4E00;&#x822C;&#x76F4;&#x63A5;&#x653E;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;<code>/</code>&#x4E0B;&#xFF0C;&#x5982;<code>webpack</code>, <code>gulp</code>, <code>eslint</code>, <code>babel</code>, <code>postcss</code>, <code>.gitignore</code>&#xFF0C; <code>package.json</code>&#x7B49;&#x914D;&#x7F6E;&#x3002;&#x5BF9;&#x4E8E;&#x8F83;&#x590D;&#x6742;&#x7684;<strong>&#x5DE5;&#x7A0B;&#x914D;&#x7F6E;</strong>&#x5982;<code>webpack</code>&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x4F1A;&#x5355;&#x72EC;&#x7ED9;&#x5176;&#x5EFA;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;<code>build</code>&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x5927;&#x6982;&#x7684;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x4F1A;&#x662F;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code>&#x2502;  .babelrc
+&#x2502;  .editorconfig
+&#x2502;  .eslintignore
+&#x2502;  .eslintrc.js
+&#x2502;  .gitignore
+&#x2502;  .postcssrc.js
+&#x2502;  favicon.ico
+&#x2502;  index.html
+&#x2502;  package-lock.json
+&#x2502;  package.json
+&#x2502;
+&#x251C;&#x2500;.vscode
+&#x2502;      settings.json
+&#x2502;
+&#x251C;&#x2500;build
+&#x2502;      build-test.js
+&#x2502;      build.js
+&#x2502;      check-versions.js
+&#x2502;      utils.js
+&#x2502;      vue-loader.conf.js
+&#x2502;      webpack.base.conf.js
+&#x2502;      webpack.dev.conf.js
+&#x2502;      webpack.prod.conf.js
+&#x2502;      webpack.test.conf.js
+&#x2502;
+&#x251C;&#x2500;config
+&#x2502;      dev.env.js
+&#x2502;      index.js
+&#x2502;      prod.env.js
+&#x2502;      test.env.js
+&#x2502;
+&#x251C;&#x2500;src
+&#x2502;  &#x2502;  App.vue
+&#x2502;  &#x2502;  main.js
+&#x2502;  &#x2502;
+</code></pre><h1 id="&#x547D;&#x540D;">&#x547D;&#x540D;</h1>
+<p>&#x7EDF;&#x4E00;&#x4F7F;&#x7528;<code>kebab-case</code>&#xFF08;&#x77ED;&#x6A2A;&#x7EBF;&#xFF09;&#x547D;&#x4EE4;&#x6CD5;&#x6765;&#x547D;&#x540D;&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x6587;&#x4EF6;&#x3002;&#x5982;<code>common-utils</code>, <code>build-config</code>&#x3002;</p>
+<ol>
+<li>&#x4F7F;&#x7528;&#x77ED;&#x6A2A;&#x7EBF;&#x7528;&#x6765;&#x5206;&#x9694;&#x5355;&#x8BCD;&#xFF0C;&#x80FD;&#x8BA9;&#x4F7F;&#x7528;&#x8005;&#x5FEB;&#x901F;&#x63D0;&#x53D6;&#x5173;&#x952E;&#x5355;&#x8BCD;&#xFF0C;&#x4FDD;&#x8BC1;&#x6613;&#x7406;&#x89E3;&#x6027;&#x3002;</li>
+<li>&#x73B0;&#x5728;&#x5F88;&#x591A;<code>npm</code>&#x5305;&#x5E7F;&#x6CDB;&#x91C7;&#x7528;&#x4E86;<code>kebab-case</code>&#xFF08;&#x77ED;&#x6A2A;&#x7EBF;&#xFF09;&#x547D;&#x4EE4;&#x6CD5;&#x3002;</li>
+</ol>
 <p><div id="gitalk-container"></div></p>
 <p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
@@ -284,12 +328,12 @@ gitalk.render("gitalk-container");
 
             
                 
-                <a href="CSS编码规范.html" class="navigation navigation-prev " aria-label="Previous page: CSS编码规范">
+                <a href="CHANGELOG.html" class="navigation navigation-prev " aria-label="Previous page: 更新日志">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Vue编码规范.html" class="navigation navigation-next " aria-label="Next page: Vue编码规范">
+                <a href="前端API适配层规范.html" class="navigation navigation-next " aria-label="Next page: 前端API适配层规范">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -300,7 +344,7 @@ gitalk.render("gitalk-container");
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Javascript编码规范","level":"1.7","depth":1,"next":{"title":"Vue编码规范","level":"1.8","depth":1,"path":"Vue编码规范.md","ref":"Vue编码规范.md","articles":[]},"previous":{"title":"CSS编码规范","level":"1.6","depth":1,"path":"CSS编码规范.md","ref":"CSS编码规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-guide"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"酷陆科技前端Team规范","language":"zh-hans","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"Javascript编码规范.md","mtime":"2019-09-16T03:47:37.378Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-16T06:04:58.236Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"前端项目目录结构及文件命名规范","level":"1.3","depth":1,"next":{"title":"前端API适配层规范","level":"1.4","depth":1,"path":"前端API适配层规范.md","ref":"前端API适配层规范.md","articles":[]},"previous":{"title":"更新日志","level":"1.2","depth":1,"path":"CHANGELOG.md","ref":"CHANGELOG.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-guide"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"酷陆科技前端Team规范","language":"zh-hans","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"项目目录结构规范.md","mtime":"2019-09-16T06:01:29.019Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-16T06:04:58.236Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
