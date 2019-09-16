@@ -240,8 +240,128 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vue&#x7F16;&#x7801;&#x89C4;&#x8303;">Vue&#x7F16;&#x7801;&#x89C4;&#x8303;</h1>
-<p>TODO</p>
+                                <h1 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h1>
+<p>&#x672C;&#x6587;&#x6839;&#x636E;&#x751F;&#x4EA7;&#x5B9E;&#x8DF5;&#x548C;&#x4E00;&#x4E9B;&#x884C;&#x4E1A;&#x5185;&#x7684;&#x89C4;&#x8303;&#xFF0C;&#x603B;&#x7ED3;&#x4E86;&#x9002;&#x5408;&#x524D;&#x7AEF;&#x56E2;&#x961F;&#x7684;<code>vue</code>&#x7F16;&#x7801;&#x98CE;&#x683C;&#xFF0C;&#x4E3A;&#x56E2;&#x961F;&#x6210;&#x5458;&#x63D0;&#x4F9B;&#x7F16;&#x7801;&#x98CE;&#x683C;&#x6807;&#x51C6;&#x548C;&#x53C2;&#x8003;&#x4F9D;&#x636E;&#xFF01;</p>
+<h1 id="&#x76EE;&#x5F55;&#x7ED3;&#x6784;">&#x76EE;&#x5F55;&#x7ED3;&#x6784;</h1>
+<ol>
+<li>&#x6309;&#x7167;&#x9879;&#x76EE;&#x5B9E;&#x9645;&#x8FD0;&#x4F5C;&#x60C5;&#x51B5;&#xFF0C;&#x603B;&#x7ED3;&#x51FA;<a href="https://cumt-robin.github.io/FE-guide/&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x89C4;&#x8303;.html" target="_blank">&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x53CA;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x89C4;&#x8303;</a>&#x3002;</li>
+<li><code>vue</code>&#x6E90;&#x4EE3;&#x7801;&#x7EDF;&#x4E00;&#x653E;&#x7F6E;&#x4E8E;<code>/src</code>&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ol>
+<pre><code>&#x251C;&#x2500;App.vue
+&#x251C;&#x2500;main.js
+&#x2502;
+&#x251C;&#x2500;api API&#x5C01;&#x88C5;&#x548C;&#x9002;&#x914D;
+&#x2502;  &#x251C;&#x2500;api.js
+&#x2502;  &#x2502;
+&#x2502;  &#x251C;&#x2500;base
+&#x2502;  &#x2502;
+&#x2502;  &#x251C;&#x2500;eqp
+&#x2502;  &#x2502;
+&#x2502;  &#x2514;&#x2500;user
+&#x2502;
+&#x251C;&#x2500;assets &#x56FE;&#x7247;&#x5B57;&#x4F53;&#x7B49;&#x8D44;&#x6E90;
+&#x2502;  &#x251C;&#x2500;fonts
+&#x2502;  &#x2502;
+&#x2502;  &#x2514;&#x2500;image
+&#x2502;
+&#x251C;&#x2500;authority &#x5904;&#x7406;&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x6743;&#x9650;
+&#x2502;  &#x251C;&#x2500;generate-routes.js
+&#x2502;  &#x251C;&#x2500;route-map.js
+&#x2502;
+&#x251C;&#x2500;components &#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;
+&#x2502;  &#x251C;&#x2500;index.js
+&#x2502;  
+&#x251C;&#x2500;directives &#x81EA;&#x5B9A;&#x4E49;&#x6307;&#x4EE4;
+&#x2502;  &#x251C;&#x2500;dialog-drag.js
+&#x2502;  &#x251C;&#x2500;index.js
+&#x2502;
+&#x251C;&#x2500;icons SVG&#x56FE;&#x6807;
+&#x2502;  &#x251C;&#x2500;index.js
+&#x2502;  &#x2502;
+&#x2502;  &#x2514;&#x2500;svg
+&#x2502;     &#x251C;&#x2500;history.svg
+&#x2502;
+&#x251C;&#x2500;mock &#x63A5;&#x53E3;&#x6A21;&#x62DF;
+&#x2502;  &#x251C;&#x2500;bsj.js
+&#x2502;  &#x251C;&#x2500;index.js
+&#x2502;  &#x2502;
+&#x2502;  &#x251C;&#x2500;eqp
+&#x2502;  &#x2502;  &#x2514;&#x2500;truck
+&#x2502;  &#x2502;     &#x251C;&#x2500;index.js
+&#x2502;  &#x2502;
+&#x2502;  &#x2514;&#x2500;user
+&#x2502;     &#x2514;&#x2500;menu
+&#x2502;        &#x251C;&#x2500;index.js
+&#x2502;
+&#x251C;&#x2500;router &#x8DEF;&#x7531;
+&#x2502;  &#x251C;&#x2500;404.js
+&#x2502;  &#x251C;&#x2500;base-url.js
+&#x2502;  &#x251C;&#x2500;common.js
+&#x2502;  &#x251C;&#x2500;index.js
+&#x2502;  &#x2502;
+&#x2502;  &#x2514;&#x2500;modules
+&#x2502;     &#x2514;&#x2500;test
+&#x2502;        &#x251C;&#x2500;index.js
+&#x2502;
+&#x251C;&#x2500;store &#x72B6;&#x6001;&#x7BA1;&#x7406;
+&#x2502;  &#x251C;&#x2500;index.js
+&#x2502;  &#x2502;
+&#x2502;  &#x2514;&#x2500;modules
+&#x2502;     &#x251C;&#x2500;user.js
+&#x2502;
+&#x251C;&#x2500;styles &#x6837;&#x5F0F;
+&#x2502;  &#x251C;&#x2500;index.scss
+&#x2502;  &#x2502;
+&#x2502;  &#x251C;&#x2500;global &#x5168;&#x5C40;&#x6837;&#x5F0F;
+&#x2502;  &#x2502;  &#x251C;&#x2500;common.scss &#x516C;&#x5171;&#x6837;&#x5F0F;
+&#x2502;  &#x2502;  &#x251C;&#x2500;element-ui.scss ElementUI&#x5B9A;&#x5236;&#x6837;&#x5F0F;
+&#x2502;  &#x2502;  &#x251C;&#x2500;element-variables.scss &#x91CD;&#x8BBE;ElementUI&#x9ED8;&#x8BA4;&#x7684;scss&#x53D8;&#x91CF;
+&#x2502;  &#x2502;  &#x251C;&#x2500;iconfont.scss &#x5B57;&#x4F53;&#x56FE;&#x6807;
+&#x2502;  &#x2502;  &#x251C;&#x2500;index.scss &#x5F15;&#x5165;&#x540C;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x5176;&#x4ED6;scss
+&#x2502;  &#x2502;  &#x251C;&#x2500;layouts.scss &#x5E03;&#x5C40;&#x6837;&#x5F0F;
+&#x2502;  &#x2502;  &#x251C;&#x2500;mixins.scss &#x7EF4;&#x62A4;mixin
+&#x2502;  &#x2502;  &#x251C;&#x2500;reset.scss &#x91CD;&#x8BBE;&#x6D4F;&#x89C8;&#x5668;&#x81EA;&#x5E26;&#x6837;&#x5F0F;&#xFF0C;&#x4FDD;&#x8BC1;&#x5404;&#x6D4F;&#x89C8;&#x5668;&#x57FA;&#x672C;&#x98CE;&#x683C;&#x4E00;&#x81F4;
+&#x2502;  &#x2502;  &#x251C;&#x2500;variables.scss &#x7EF4;&#x62A4;scss&#x53D8;&#x91CF;
+&#x2502;  &#x2502;
+&#x2502;  &#x2514;&#x2500;scoped &#x5C40;&#x90E8;&#x6837;&#x5F0F;
+&#x2502;     &#x251C;&#x2500;login.scss
+&#x2502;
+&#x251C;&#x2500;utils &#x5DE5;&#x5177;&#x96C6;
+&#x2502;  &#x251C;&#x2500;helper.js
+&#x2502;
+&#x2514;&#x2500;views &#x9875;&#x9762;
+    &#x251C;&#x2500;404
+    &#x2502;  &#x251C;&#x2500;index.vue
+    &#x2502;
+</code></pre><ol>
+<li><code>views</code>&#x76EE;&#x5F55;&#x4E0B;&#x662F;&#x9879;&#x76EE;&#x7684;&#x6240;&#x6709;&#x9875;&#x9762;&#xFF0C;&#x5E94;&#x6309;&#x7167;&#x8DEF;&#x7531;&#x5C42;&#x7EA7;&#xFF0C;&#x7ED3;&#x5408;&#x529F;&#x80FD;&#x7279;&#x6027;&#xFF0C;&#x5206;&#x6A21;&#x5757;&#x4E66;&#x5199;&#x3002;&#x622A;&#x53D6;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#x4E3A;&#x4F8B;&#x8BF4;&#x660E;&#x3002;</li>
+</ol>
+<pre><code>&#x251C;&#x2500;404 &#x4E00;&#x7EA7;&#x8DEF;&#x7531;
+&#x2502;  &#x251C;&#x2500;index.vue
+&#x2502;
+&#x251C;&#x2500;backend &#x4E00;&#x7EA7;&#x8DEF;&#x7531;
+&#x2502;  &#x251C;&#x2500;index.vue
+&#x2502;  &#x2502;
+&#x2502;  &#x251C;&#x2500;cloud-platform &#x4E8C;&#x7EA7;&#x8DEF;&#x7531;
+&#x2502;  &#x2502;  &#x251C;&#x2500;index.vue
+&#x2502;  &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x251C;&#x2500;department &#x4E09;&#x7EA7;&#x8DEF;&#x7531;
+&#x2502;  &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x251C;&#x2500;device &#x8FD9;&#x5355;&#x7EAF;&#x662F;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#xFF0C;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x5BF9;&#x9F50;&#x4E1A;&#x52A1;&#x8BBE;&#x8BA1;&#xFF0C;&#x5C06;&#x4E91;&#x76D2;&#xFF0C;&#x4E91;&#x73AF;&#xFF0C;&#x63A7;&#x5236;&#x5668;&#x7B49;&#x7C7B;&#x4F3C;&#x529F;&#x80FD;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x5F52;&#x7C7B;
+&#x2502;  &#x2502;  &#x2502;  &#x251C;&#x2500;cloud-box &#x4E09;&#x7EA7;&#x8DEF;&#x7531;
+&#x2502;  &#x2502;  &#x2502;  &#x2502;
+&#x2502;  &#x2502;  &#x2502;  &#x2514;&#x2500;controller &#x4E09;&#x7EA7;&#x8DEF;&#x7531;
+&#x2502;  &#x2502;  &#x2502;
+&#x2502;  &#x251C;&#x2500;datacenter &#x4E8C;&#x7EA7;&#x8DEF;&#x7531;
+&#x2502;  &#x2502;
+&#x251C;&#x2500;login &#x4E00;&#x7EA7;&#x8DEF;&#x7531;
+&#x2502;  &#x251C;&#x2500;index.vue
+&#x2502;
+</code></pre><h1 id="&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x6587;&#x4EF6;&#x547D;&#x540D;">&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x6587;&#x4EF6;&#x547D;&#x540D;</h1>
+<p>&#x7EDF;&#x4E00;&#x4F7F;&#x7528;<code>kebab-case</code>&#xFF08;&#x77ED;&#x6A2A;&#x7EBF;&#xFF09;&#x547D;&#x4EE4;&#x6CD5;&#x6765;&#x547D;&#x540D;&#x6587;&#x4EF6;&#x5939;&#x53CA;&#x6587;&#x4EF6;&#xFF0C;&#x89C1;<a href="https://cumt-robin.github.io/FE-guide/&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x89C4;&#x8303;.html" target="_blank">&#x524D;&#x7AEF;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x53CA;&#x6587;&#x4EF6;&#x547D;&#x540D;&#x89C4;&#x8303;</a>&#x3002;</p>
+<h1 id="&#x547D;&#x540D;&#x89C4;&#x8303;">&#x547D;&#x540D;&#x89C4;&#x8303;</h1>
+<p>&#x89C1;<a href="https://cumt-robin.github.io/FE-guide/Javascript&#x7F16;&#x7801;&#x89C4;&#x8303;.html#&#x547D;&#x540D;&#x89C4;&#x8303;" target="_blank">Javascript&#x7F16;&#x7801;&#x89C4;&#x8303;</a> - &#x547D;&#x540D;&#x89C4;&#x8303;</p>
+<h1 id="&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h1>
 <p><div id="gitalk-container"></div></p>
 <p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"></p>
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
@@ -294,7 +414,7 @@ gitalk.render("gitalk-container");
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vue编码规范","level":"1.8","depth":1,"previous":{"title":"Javascript编码规范","level":"1.7","depth":1,"path":"Javascript编码规范.md","ref":"Javascript编码规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-guide"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"酷陆科技前端Team规范","language":"zh-hans","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"Vue编码规范.md","mtime":"2019-09-16T03:47:37.382Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-16T06:04:58.236Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Vue编码规范","level":"1.8","depth":1,"previous":{"title":"Javascript编码规范","level":"1.7","depth":1,"path":"Javascript编码规范.md","ref":"Javascript编码规范.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","-lunr","-search","search-plus","github"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"hide-element":{"elements":[".gitbook-link"]},"github":{"url":"https://github.com/cumt-robin/FE-guide"},"back-to-top-button":{},"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Tusi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"酷陆科技前端Team规范","language":"zh-hans","gitbook":"*","theme-default":{"showLevel":true}},"file":{"path":"Vue编码规范.md","mtime":"2019-09-16T09:20:01.791Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-16T09:22:46.506Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
