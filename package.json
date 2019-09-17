@@ -1,7 +1,7 @@
 {
   "name": "fe-guide",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.2.2",
+  "description": "guide of coding for frontend team",
   "main": "index.js",
   "scripts": {
     "start": "gitbook serve",
@@ -21,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/cumt-robin/FE-guide/issues"
   },
-  "homepage": "https://github.com/cumt-robin/FE-guide#readme"
+  "homepage": "https://github.com/cumt-robin/FE-guide#readme",
+  "dependencies": {}
 }
